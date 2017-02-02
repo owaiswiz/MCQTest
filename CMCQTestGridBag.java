@@ -25,7 +25,7 @@ class Test implements ActionListener
 	boolean attemptedQuestion[] = new boolean[100];
 	int noOfQuestions = 0;
 	int marks = 0;
-	int totalTime = 10;
+	int totalTime = 1200;
 	JLabel timerLabel,question;
 	ButtonGroup optionGroup;
 	JRadioButton option[] = new JRadioButton[4];
@@ -553,8 +553,6 @@ class InteractWithFTPServer
 		try
 		{
 			String serverAddress = ip;
-			String remoteDirectory = "/";
-			
 			
 			ftp = new FTPClient();
 			ftp.connect(serverAddress);

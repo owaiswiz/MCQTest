@@ -1,0 +1,1 @@
+"Pointers in C Are given by","Arrows","Stars","Semi-Colon","Colon","2"
