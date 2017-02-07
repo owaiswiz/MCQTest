@@ -1,1 +1,3 @@
-"Pointers in C Are given by","Arrows","Stars","Semi-Colon","Colon","2"
+"Pointers in C Are Given by","Arrows","Stars","Colons","Commas","2"
+"int keyword in C is used for","Integer","Double","Float","Characters","1"
+"C is compiled with the following toolchain","gcc","g++","c++","c","1"

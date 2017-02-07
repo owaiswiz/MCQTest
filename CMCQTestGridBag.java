@@ -84,10 +84,12 @@ class Test implements ActionListener
 		f.setFont(bigArialFont);
 		f.setLayout(new GridBagLayout());
 		GridBagConstraints c = new GridBagConstraints();
-		
+		final String ipFinal = ip;
+		final String usernameFinal = username;
+		final String passwordFinal = password;
 		wndCloser = new WindowAdapter(){
 			public void windowClosing(WindowEvent e) {
-				InteractWithFTPServer dc = new InteractWithFTPServer(ip,username,password);
+				InteractWithFTPServer dc = new InteractWithFTPServer(ipFinal,usernameFinal,passwordFinal);
 				dc.downloadCountFile();
 				dc.changeCountFile("decrement");
 				dc.uploadFile("count.txt");
@@ -469,6 +471,7 @@ class InitialForm implements ActionListener
 		c.gridx = 0;
 		c.gridy = 3;
 		JLabel userNameLabel = new JLabel("Enter FTP Username");
+		userNameLabel.setFont(moderateArialFont);
 		ipLabel.setFont(moderateArialFont);
 		f.add(userNameLabel,c);
 		
